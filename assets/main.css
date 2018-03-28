@@ -52,8 +52,10 @@ table {
 }
 
 /********************
-******MAIN******
+******MAIN***********
 *********************/
+
+
 
 header {
   height: 750px;
@@ -68,6 +70,7 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
+  flex-basis: 1000px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -148,5 +151,63 @@ nav ul li a:hover {
 }
 
 .hero-text span {
+  text-decoration: underline;
+}
+
+/********************
+******NUMBERS*********
+*********************/
+
+.numbers {
+  font-family: 'lato', sans-serif;
+  height: 145px;
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.numbers p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/********************
+******FOOTER*********
+*********************/
+
+footer {
+  color: #8b8b8b;
+  font-size: 12px;
+  font-family: 'lato', sans-serif;
+  background-color: #eee;
+  height: 80px;
+}
+
+footer .before {
+  height: 5px;
+  background-color: #e3e3e3;
+}
+
+footer .design {
+  text-transform: uppercase;
+}
+
+footer .design a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .design a:hover {
   text-decoration: underline;
 }
