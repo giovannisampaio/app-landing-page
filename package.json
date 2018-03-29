@@ -1,0 +1,19 @@
+{
+  "name": "app-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page template",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync start --server --directory --files '*.js, *.html, *.css' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovannisampaio/app-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovannisampaio/app-landing-page/issues"
+  },
+  "homepage": "https://github.com/giovannisampaio/app-landing-page#readme"
+}
