@@ -176,7 +176,7 @@ nav ul li a:hover {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .details {
@@ -210,6 +210,81 @@ nav ul li a:hover {
 .frame img {
   max-height: 52px;
 }
+
+/********************
+******ABOUT*********
+*********************/
+
+.about {
+  height: 755px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  height: inherit;
+}
+
+.mockup {
+  margin-right: 100px;
+  align-self: flex-end;
+  position: relative;
+}
+
+.iphone {
+  height: 655px;
+  width: 470px;
+
+}
+
+.screen {
+  position: absolute;
+  top: 95px;
+  width: 268px;
+  left: 103px;
+  height: 469px;
+}
+
+.text {
+  margin-top: 160px;
+}
+
+.about-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.about p {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  max-width: 450px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 78px;
+  height: 4px;
+  background-color: #f68174;
+  position: relative;
+  top: 4px;
+}
+
+.app-download img {
+  height: 40px;
+}
+
 /********************
 ******NUMBERS*********
 *********************/
