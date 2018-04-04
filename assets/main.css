@@ -255,7 +255,7 @@ nav ul li a:hover {
 }
 
 .mockup {
-  margin-right: 20px;
+  margin-right: 100px;
   align-self: flex-end;
   position: relative;
 }
@@ -268,10 +268,9 @@ nav ul li a:hover {
 
 .screen {
   position: absolute;
-  top: 95px;
-  width: 268px;
-  left: 103px;
-  height: 469px;
+  top: 110px;
+  width: 310px;
+  left: 82px;
 }
 
 .text {
@@ -323,6 +322,9 @@ nav ul li a:hover {
   justify-content: center;
   color: #fff;
   margin-bottom: 85px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
 }
 
 .testimonials img {
