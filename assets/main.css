@@ -129,25 +129,25 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-  font-size: 85px;
+  font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
 }
 
 .hero-text h2 {
   font-family: 'Times', serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .hero-text button {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #fff;
-  margin-top: 35px;
-  padding: 20px 70px 25px 70px;
+  margin-top: 20px;
+  padding: 12px 30px 12px 30px;
   background-color: transparent;
   border: solid 2px #fff;
   border-radius: 2px;
@@ -155,7 +155,8 @@ nav ul li a:hover {
 }
 
 .hero-text p {
-  margin-top: 36px;
+  font-size: 12px;
+  margin-top: 15px;
   text-transform: uppercase;
 }
 
@@ -250,63 +251,89 @@ nav ul li a:hover {
 
 .container {
   display: flex;
-  max-width: 1100px;
+  max-width: 80vw;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mockup {
-  margin-right: 100px;
+  margin-top: 60px;
   align-self: flex-end;
   position: relative;
 }
-
+/*
 .iphone {
   height: 655px;
   width: 470px;
 
 }
+*/
 
+.iphone {
+  width: 80vw;
+}
+
+.screen {
+  width: 69vw;
+  position: absolute;
+  top: 24.1vw;
+  left: 6.05vw;
+  clip: rect(0, 69vw, 120.5vw, 0);
+  border-radius: 5px 5px 0 0;
+}
+
+
+/*
 .screen {
   position: absolute;
   top: 110px;
   width: 310px;
   left: 82px;
 }
+*/
 
 .text {
-  margin-top: 160px;
+  margin-top: 60px;
 }
 
 .about-title {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .about p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   max-width: 450px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   text-align: justify;
-  line-height: 25px;
+  line-height: 15px;
 }
 
 .about-title::after {
   content: '';
   display: block;
-  width: 78px;
+  width: 100px;
   height: 4px;
   background-color: #f68174;
   position: relative;
   top: 4px;
+  margin: 0 auto;
+}
+
+.app-download {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .app-download img {
-  height: 40px;
+  height: 30px;
 }
 
 /********************
@@ -322,7 +349,6 @@ nav ul li a:hover {
   justify-content: center;
   color: #fff;
   margin-bottom: 85px;
-  margin-top: -50px;
   position: relative;
   z-index: 10;
 }
@@ -584,7 +610,6 @@ footer .design a:hover {
 
   .recipe { 
     height: 15vw; 
-    width: 25vw;
   }
     
   .recipes {
@@ -592,6 +617,10 @@ footer .design a:hover {
   }
 
   /* Testimonials */
+
+  .testimonials {
+    margin-top: -60px;
+  }
 
   .testimonials img {
     height: 100px;
@@ -610,4 +639,79 @@ footer .design a:hover {
     font-size: 15px;
   }
 
+  /* About */
+
+  .mockup {
+    margin-right: 50px;
+  }
+  
+  .iphone {
+    height: 655px;
+    width: 470px;
+  }
+
+  .screen {
+    width: 66%;
+    top: 16.65%;
+    left: 17.5%;
+  }
+
+  .text {
+    margin-top: 60px;
+  }
+
+  .about-title {
+    margin-top: 160px;
+    text-align: left;
+  }
+
+  .about p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+  }
+
+  .about-title::after {
+    margin: 0;
+  }
+
+  .app-download {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .app-download img {
+    height: 40px;
+    margin-bottom: 10px;      
+  }
+
+  /* Header */
+
+  .hero-text h1 {
+    font-size: 85px;
+    letter-spacing: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+
+  .hero-text button {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
 }
