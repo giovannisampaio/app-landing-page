@@ -260,37 +260,23 @@ nav ul li a:hover {
   margin-top: 60px;
   align-self: flex-end;
   position: relative;
+  max-width: 400px;
 }
-/*
-.iphone {
-  height: 655px;
-  width: 470px;
 
-}
-*/
 
 .iphone {
   width: 80vw;
+  max-width: 330px;
 }
 
 .screen {
-  width: 69vw;
+  width: 86%;
   position: absolute;
-  top: 24.1vw;
-  left: 6.05vw;
-  clip: rect(0, 69vw, 120.5vw, 0);
+  top: 16.5%;
+  left: 7.6%;
+  clip: rect(0, 69vw, 120.3vw, 0);
   border-radius: 5px 5px 0 0;
 }
-
-
-/*
-.screen {
-  position: absolute;
-  top: 110px;
-  width: 310px;
-  left: 82px;
-}
-*/
 
 .text {
   margin-top: 60px;
@@ -417,10 +403,6 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.recipes-row {
-  width: 100%;
-}
-
 .recipe {
   display: flex;
   flex-direction: column;
@@ -428,6 +410,10 @@ nav ul li a:hover {
   align-items: center;
   background-size: cover; 
   height: 50vw; 
+}
+
+.recipes-row {
+  width: 100%;
 }
 
 .recipe h4 {
@@ -576,11 +562,23 @@ footer .design a:hover {
 ******MEDIA QUERIES***
 *********************/
 
+@media screen and (min-width: 600px) {
 
-@media screen and (min-width: 1000px) {
+  /* Recipes */
+  .recipe { 
+    height: 15vw;
+  }
+    
+  .recipes {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 970px) {
 
  
   /* Footer */
+  
   .copy {
     text-align: left;
     padding: 0;
@@ -593,7 +591,7 @@ footer .design a:hover {
 
   .wrapper-footer {
     justify-content: space-between;
-  }
+  }   
 
   /* Numbers */
 
@@ -644,18 +642,6 @@ footer .design a:hover {
   .mockup {
     margin-right: 50px;
   }
-  
-  .iphone {
-    height: 655px;
-    width: 470px;
-  }
-
-  .screen {
-    width: 66%;
-    top: 16.65%;
-    left: 17.5%;
-  }
-
   .text {
     margin-top: 60px;
   }
